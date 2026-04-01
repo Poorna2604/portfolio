@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import profileImg from "/image.PNG";
 
 export default function App() {
   const canvasRef = useRef(null);
@@ -129,9 +130,10 @@ export default function App() {
             <div className="absolute inset-0 rounded-full border border-purple-500 animate-spin-slow opacity-40"></div>
 
             <img
-              src="/image.PNG"
+              src={profileImg}
               alt="profile"
-              className="w-40 h-40 rounded-full object-cover border-2 border-green-400 shadow-[0_0_25px_#00ff9f]"
+              className="w-40 h-40 rounded-full object-cover border-2 border-green-400 
+              shadow-[0_0_25px_#00ff9f]"
             />
 
             <div className="absolute inset-0 rounded-full overflow-hidden">
